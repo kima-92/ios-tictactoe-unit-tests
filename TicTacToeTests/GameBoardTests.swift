@@ -43,7 +43,7 @@ class GameBoardTests: XCTestCase {
         
         XCTAssertEqual(board[(0,0)], .o)
         
-        XCTAssertNoThrow(try board.place(mark: .x, on: (0, 0)))
+        XCTAssertNoThrow(try board.place(mark: .x, on: (2, 2)))
         
         XCTAssertEqual(board[(2,2)], .x)
         
