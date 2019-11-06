@@ -33,6 +33,8 @@ struct GameBoard {
         case empty
     }
     
+    //let gameBoard = Gameboard()
+    //let mark = gameboard[(x: 1, y: 2 )]
     subscript(coordinate: Coordinate) -> Mark? {
         let square = squares[arrayIndex(for: coordinate)]
         if case let Square.filled(mark) = square {
